@@ -12,7 +12,9 @@ const MovieDetailsActor = ({ movieId }) => {
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=844dba0bfd8f3a4f3799f6130ef9e335`
         );
-        setActors(response.data.cast || []);
+        // console.log(response.data);
+
+        setActors(response.data);
       } catch (error) {
         console.error("Error fetching actors:", error);
       }
@@ -136,6 +138,7 @@ const MovieDetailsActor = ({ movieId }) => {
             <span className="rmdb-actor-character">Rachel</span>
           </div>
         </div>
+        {actors ? console.log(actors) : null}
         <div className="rmdb-grid-element">
           <div className="rmdb-actor">
             <img
