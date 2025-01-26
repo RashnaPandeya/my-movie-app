@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0px;
+}
+
+.rmdb-grid h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 42px;
+    padding: 16px 100px;
+}
+  
+  .rmdb-grid-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding: 16px 100px;
+  }
+  
+  .rmdb-grid-element {
+    background: #353535;
+    max-height: 430px;
+    -webkit-animation: animateGrid 0.5s;
+            animation: animateGrid 0.5s;
+    overflow: hidden;
+  }
+/*   
+  @-webkit-keyframes animateGrid {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animateGrid {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   */
+  @media screen and (max-width: 720px) {
+    .rmdb-grid-content {
+      grid-template-columns: auto auto;
+    }
+  
+    .rmdb-grid-element:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+  
+    .rmdb-grid h1 {
+      font-size: 22px;
+    }
+  }
+  .rmdb-actor {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .rmdb-actor img {
+    width: 40%;
+    height: auto;
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .rmdb-actor-name {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    color:#fff;
+    float: left;
+    margin: 10px 20px;
+    width: 40%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .rmdb-actor-character {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    color:#fff;
+    float: left;
+    margin: 0 20px 10px 20px;
+    width: 40%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .rmdb-movieinfobar {
+    width: 100%;
+    height: 105px;
+    background: #1c1c1c;
+    position: relative;
+    padding: 25px 20px 0px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+  }
+  
+  .rmdb-movieinfobar-content {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  .rmdb-movieinfobar-content-col {
+    float: left;
+    width: 33.33%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 20px 0 0;
+  }
+  
+  .rmdb-movieinfobar-info {
+    padding: 5px 0 0 10px;
+    float: left;
+  }
+  
+  .fa-time, .fa-revenue {
+    float: left;
+    margin-top: -4px;
+  
+  }
+  
+  .fa-budget {
+    float: left;
+    margin-top: -3px;
+  }
+  
